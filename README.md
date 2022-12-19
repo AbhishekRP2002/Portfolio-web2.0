@@ -1,2 +1,6 @@
-# Portfolio-web2.0
-Simple and Minimal portfolio  website to showcase my  work and skills . 
+# Minimal Portfolio
+
+
+
+
+This is designed and developed by Abhishek Ranjan.
