@@ -1,12 +1,11 @@
-import { useState } from "react";
-import React from "react";
 // import './App.css'
 import "../css/custom.css";
 import "../css/font-awesome.min.css";
 import "../css/kube.min.css";
 import "../css/custom.min.css";
-import "../css/kube.css";
-
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+import {Typewriter} from "react-simple-typewriter";
 
 function App() {
   const headingStyle = {
@@ -16,7 +15,7 @@ function App() {
   return (
     <>
       <div className="main-nav">
-        <div className="container">
+        <div className="container-nav">
           <header className="group top-nav">
             <div
               className="navigation-toggle"
@@ -40,6 +39,9 @@ function App() {
                   <li>
                     <a href="#skills">Skills</a>
                   </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -49,18 +51,36 @@ function App() {
 
       {/* <!-- Introduction --> */}
       <div className="intro section" id="about">
-        <div className="container">
+        <div className="container" id="about-id">
+          <div className="container-contents">
           <div className="units-row units-split wrap">
             <div className="unit-20">
               <img src="../img/dp.jpg" alt="Avatar" />
             </div>
-            <div className="unit-80 cursorcontainer">
-              <h1
-              style= {headingStyle}>
+            <div className="unit-80 cursorcontainer"
+
+            >
+              <h1 style={headingStyle}>
                 {" "}
                 Myself Abhishek Ranjan ,<br />
-                <span className="typed-text"></span>
-                <span className="cursor">&nbsp;</span>
+                <span
+                  style={{ color: "#00a8ff", fontWeight: 'bold' }}
+                  id="typed-text"
+                  className="typed-text"
+                >
+                  <Typewriter
+                    loop
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={80}
+                    deleteSpeed={50}
+                    delaySpeed={1000}
+                    words={["Developer", "ML Practitioner", "Designer"]}
+                    onLoop={(loopCount) =>
+                      console.log(`Just completed loop ${loopCount}`)
+                    }
+                  />
+                </span>
               </h1>
             </div>
             <p>
@@ -78,6 +98,7 @@ function App() {
               learning to solve real-world problems.
             </p>
           </div>
+        </div>
         </div>
       </div>
 
@@ -215,8 +236,8 @@ function App() {
           <ul className="skill-list list-flat">
             <li>Web Technologies</li>
             <li>
-              Git - Version Control Systems- Webpack - Heroku - Netlify - Figma
-              - HTML - CSS Adobe Premiere Pro - Adobe After Effects - VS Code -
+              Git - Version Control Systems- Webpack - Vercel - Netlify - Figma
+              - HTML - CSS - Adobe Premiere Pro - Adobe After Effects - VS Code -
               Adobe Illustrator
             </li>
           </ul>
@@ -231,7 +252,7 @@ function App() {
       </div>
 
       <footer>
-        <div className="container">
+        <div className="container-bottom">
           <div className="units-row">
             <div className="unit-50">
               <p>Designed by Abhishek Ranjan</p>
