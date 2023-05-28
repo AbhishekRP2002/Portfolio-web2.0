@@ -1,8 +1,9 @@
-// import './App.css'
+import './App.css'
 import "../css/custom.css";
 import "../css/font-awesome.min.css";
 import "../css/kube.min.css";
 import "../css/custom.min.css";
+
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import {Typewriter} from "react-simple-typewriter";
@@ -13,7 +14,7 @@ function App() {
     textTransform: "none",
   };
   return (
-    <>
+    <div className='App'>
       <div className="main-nav">
         <div className="container-nav">
           <header className="group top-nav">
@@ -22,7 +23,7 @@ function App() {
               data-tools="navigation-toggle"
               data-target="#navbar-1"
             >
-              <span className="logo">LOGO</span>
+              {/* <span className="logo">LOGO</span> */}
             </div>
             <div className="nav-container">
               <nav id="navbar-1" className="navbar item-nav">
@@ -40,7 +41,7 @@ function App() {
                     <a href="#skills">Skills</a>
                   </li>
                   <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">Talk to Me</a>
                   </li>
                 </ul>
               </nav>
@@ -53,7 +54,7 @@ function App() {
       <div className="intro section" id="about">
         <div className="container" id="about-id">
           <div className="container-contents">
-          <div className="units-row units-split wrap">
+          <div className="units-row units-split wrap"  id= "about-conatiner">
             <div className="unit-20">
               <img src="../img/dp.jpg" alt="Avatar" />
             </div>
@@ -83,7 +84,7 @@ function App() {
                 </span>
               </h1>
             </div>
-            <p>
+            <p className='about-para'>
               I am Pre-Final year student at{" "}
               <span>
                 <a href="https://nitrkl.ac.in/">
@@ -104,7 +105,7 @@ function App() {
 
       {/* <!-- Work Experience --> */}
       <div className="work section second" id="experiences">
-        <div className="container">
+        <div className="container" id='experiences-id'>
           <h1>
             Work
             <br />
@@ -136,7 +137,7 @@ function App() {
 
       {/* <!-- Projects & Achievements --> */}
       <div className="award section second" id="achievements">
-        <div className="container">
+        <div className="container" id='projects-id'>
           <h1>
             Projects &amp;
             <br />
@@ -212,7 +213,7 @@ function App() {
 
       {/* <!-- Technical Skills --> */}
       <div className="skills section second" id="skills">
-        <div className="container">
+        <div className="container" id='skills-id'>
           <h1>
             Technical
             <br />
@@ -246,7 +247,7 @@ function App() {
 
       {/* <!-- Quote --> */}
       <div className="quote">
-        <div className="container text-centered">
+        <div className="container-image text-centered">
           <h1>Knowledge is Power.</h1>
         </div>
       </div>
@@ -284,7 +285,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
 

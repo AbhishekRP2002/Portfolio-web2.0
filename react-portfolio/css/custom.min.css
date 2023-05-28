@@ -1,8 +1,3 @@
-/*
- *  Draco HTML Template by @afnizarnur
- *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
- */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;400;500;700;800&family=Playfair+Display:wght@500;600;700&family=Questrial&family=Raleway:wght@300;400;600;700;800;900&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -116,12 +111,12 @@ a:hover {
 }
 
 .main-nav {
-  background: #f4f4f4;
+  /* background: #ffffff; */
   padding-top: 23px
 }
 
 .main-nav nav ul li a {
-  color: #a7a7a7
+  color: #343434;
 }
 
 .main-nav nav ul li.active a {
@@ -191,7 +186,7 @@ a:hover {
   font-size: 1.1875em;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 1px solid #b3b3b3
+  border-bottom: 1px solid #b3b3b3;
 }
 
 .work .work-list li a:hover {
@@ -264,10 +259,10 @@ footer .social li a {
 }
 
 nav {
-  background: #fff;
+  /* background: #fff; */
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  color: #f4f4f4;
 }
 
 nav ul li {
@@ -278,6 +273,7 @@ nav ul li {
   margin: 0 20px;
   cursor: pointer;
   position: relative;
+ 
 }
 
 nav ul li:after {
