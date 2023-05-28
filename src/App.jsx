@@ -3,6 +3,7 @@ import "../css/custom.css";
 import "../css/font-awesome.min.css";
 import "../css/kube.min.css";
 import "../css/custom.min.css";
+import dp from "../img/dp.jpg";
 
 // eslint-disable-next-line no-unused-vars
 import React from "react";
@@ -56,7 +57,7 @@ function App() {
           <div className="container-contents">
           <div className="units-row units-split wrap"  id= "about-conatiner">
             <div className="unit-20">
-              <img src="../img/dp.jpg" alt="Avatar" />
+              <img src={dp} alt="Avatar" />
             </div>
             <div className="unit-80 cursorcontainer"
 
