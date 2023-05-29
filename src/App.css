@@ -7,6 +7,7 @@ radial-gradient(at 10% 59%, hsla(34,0%,96%,1) 0px, transparent 50%),
 radial-gradient(at 17% 74%, hsla(325,100%,76%,1) 0px, transparent 50%),
 radial-gradient(at 3% 30%, hsla(330,100%,75%,1) 0px, transparent 50%),
 radial-gradient(at 76% 3%, rgb(210, 211, 255) 0px, transparent 50%);
+background-size: 100% 100%;
 }
 
 
@@ -47,4 +48,13 @@ radial-gradient(at 76% 3%, rgb(210, 211, 255) 0px, transparent 50%);
 #skills-id{
   padding: 25px 15px;
 
+}
+
+.name-class{
+  font-family: 'Playfair Display SC', serif;
+  color: #333333;
+  line-height: 1.75em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

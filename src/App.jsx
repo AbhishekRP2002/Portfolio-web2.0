@@ -1,13 +1,16 @@
-import './App.css'
+import "./App.css";
 import "../css/custom.css";
 import "../css/font-awesome.min.css";
 import "../css/kube.min.css";
 import "../css/custom.min.css";
 import dp from "../img/dp.jpg";
-
+import { Link } from "react-scroll";
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import {Typewriter} from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 
 function App() {
   const headingStyle = {
@@ -15,7 +18,7 @@ function App() {
     textTransform: "none",
   };
   return (
-    <div className='App'>
+    <div className="App">
       <div className="main-nav">
         <div className="container-nav">
           <header className="group top-nav">
@@ -30,16 +33,53 @@ function App() {
               <nav id="navbar-1" className="navbar item-nav">
                 <ul className="nav-ul">
                   <li className="active">
-                    <a href="#about">About</a>
+                    {/* <a href="#about">About</a> */}
+                    <Link
+                      activeClass="active"
+                      to="about"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={300}
+          
+                    >
+                      About
+                    </Link>
                   </li>
                   <li>
-                    <a href="#experiences">Experiences</a>
+                    {/* <a href="#experiences">Experiences</a> */}
+                    <Link
+                      activeClass="active"
+                      to="experiences"
+                      spy={true}
+                      smooth={true}
+                      offset={20}
+                      duration={400}
+                      >Experiences</Link>
                   </li>
                   <li>
-                    <a href="#achievements">Projects</a>
+                    {/* <a href="#achievements">Projects</a> */}
+                    <Link
+                      activeClass="active"
+                      to="achievements"
+                      spy={true}
+                      smooth={true}
+                      offset={20}
+                      duration={500}
+                      >Projects</Link>
                   </li>
                   <li>
-                    <a href="#skills">Skills</a>
+                    {/* <a href="#skills">Skills</a>
+                     */}
+
+<Link
+                      activeClass="active"
+                      to="skills"
+                      spy={true}
+                      smooth={true}
+                      offset={20}
+                      duration={600}
+                      >Skills</Link>
                   </li>
                   <li>
                     <a href="#contact">Talk to Me</a>
@@ -55,58 +95,56 @@ function App() {
       <div className="intro section" id="about">
         <div className="container" id="about-id">
           <div className="container-contents">
-          <div className="units-row units-split wrap"  id= "about-conatiner">
-            <div className="unit-20">
-              <img src={dp} alt="Avatar" />
+            <div className="units-row units-split wrap" id="about-conatiner">
+              <div className="unit-20">
+                <img src={dp} alt="Avatar" />
+              </div>
+              <div className="unit-80 cursorcontainer">
+                <h1 style={headingStyle}>
+                  {" "}
+                  Myself Abhishek Ranjan ,<br />
+                  <span
+                    style={{ color: "#00a8ff", fontWeight: "bold" }}
+                    id="typed-text"
+                    className="typed-text"
+                  >
+                    <Typewriter
+                      loop
+                      cursor
+                      cursorStyle="_"
+                      typeSpeed={80}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                      words={["Developer", "ML Practitioner", "Designer"]}
+                      onLoop={(loopCount) =>
+                        console.log(`Just completed loop ${loopCount}`)
+                      }
+                    />
+                  </span>
+                </h1>
+              </div>
+              <p className="about-para">
+                I am Pre-Final year student at{" "}
+                <span>
+                  <a href="https://nitrkl.ac.in/">
+                    National Institute of Technology , Rourkela
+                  </a>
+                </span>{" "}
+                majoring in Computer Science and Engineering. Being a problem
+                solver and tech enthusiast, I love exploring different domains
+                of computer science which aligns with my interest and domain. I
+                am passionate about leveraging my technical background in web
+                development, data science, computer vision, NLP and machine
+                learning to solve real-world problems.
+              </p>
             </div>
-            <div className="unit-80 cursorcontainer"
-
-            >
-              <h1 style={headingStyle}>
-                {" "}
-                Myself Abhishek Ranjan ,<br />
-                <span
-                  style={{ color: "#00a8ff", fontWeight: 'bold' }}
-                  id="typed-text"
-                  className="typed-text"
-                >
-                  <Typewriter
-                    loop
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={80}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                    words={["Developer", "ML Practitioner", "Designer"]}
-                    onLoop={(loopCount) =>
-                      console.log(`Just completed loop ${loopCount}`)
-                    }
-                  />
-                </span>
-              </h1>
-            </div>
-            <p className='about-para'>
-              I am Pre-Final year student at{" "}
-              <span>
-                <a href="https://nitrkl.ac.in/">
-                  National Institute of Technology , Rourkela
-                </a>
-              </span>{" "}
-              majoring in Computer Science and Engineering. Being a problem
-              solver and tech enthusiast, I love exploring different domains of
-              computer science which aligns with my interest and domain. I am
-              passionate about leveraging my technical background in web
-              development, data science, computer vision, NLP and machine
-              learning to solve real-world problems.
-            </p>
           </div>
-        </div>
         </div>
       </div>
 
       {/* <!-- Work Experience --> */}
       <div className="work section second" id="experiences">
-        <div className="container" id='experiences-id'>
+        <div className="container" id="experiences-id">
           <h1>
             Work
             <br />
@@ -138,7 +176,7 @@ function App() {
 
       {/* <!-- Projects & Achievements --> */}
       <div className="award section second" id="achievements">
-        <div className="container" id='projects-id'>
+        <div className="container" id="projects-id">
           <h1>
             Projects &amp;
             <br />
@@ -203,7 +241,7 @@ function App() {
             <li>
               <a
                 href="https://github.com/AbhishekRP2002/Sorting-Visualizer"
-                className="hre"
+                className="href"
               >
                 Sorting Visualizer
               </a>
@@ -214,7 +252,7 @@ function App() {
 
       {/* <!-- Technical Skills --> */}
       <div className="skills section second" id="skills">
-        <div className="container" id='skills-id'>
+        <div className="container" id="skills-id">
           <h1>
             Technical
             <br />
@@ -239,8 +277,8 @@ function App() {
             <li>Web Technologies</li>
             <li>
               Git - Version Control Systems- Webpack - Vercel - Netlify - Figma
-              - HTML - CSS - Adobe Premiere Pro - Adobe After Effects - VS Code -
-              Adobe Illustrator
+              - HTML - CSS - Adobe Premiere Pro - Adobe After Effects - VS Code
+              - Adobe Illustrator
             </li>
           </ul>
         </div>
@@ -249,41 +287,26 @@ function App() {
       {/* <!-- Quote --> */}
       <div className="quote">
         <div className="container-image text-centered">
-          <h1>Knowledge is Power.</h1>
+          <h1>
+            
+            Knowledge is Power.</h1>
         </div>
       </div>
 
       <footer>
-        <div className="container-bottom">
-          <div className="units-row">
-            <div className="unit-50">
-              <p>Designed by Abhishek Ranjan</p>
+        <div 
+        className="container-bottom">
+        
+            <div className="designer-class">
+              <p>Designed by 
+                <a className="name-class" href="https://linktr.ee/Abhishekrp2002">
+                   Abhishek Ranjan
+
+                </a>
+                </p>
             </div>
-            <div className="unit-50">
-              <ul className="social list-flat right">
-                <li>
-                  <a href="mailto:aviranjan444@gmail.com">
-                    <i className="fa fa-send"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/abhishek_rp2002">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://github.com/AbhishekRP2002">
-                    <i className="fa fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/abhishek-ranjan-2002/">
-                    <i className="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+        
         </div>
       </footer>
     </div>
