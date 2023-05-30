@@ -65,6 +65,7 @@ a:hover {
 }
 .container:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translate(0px, -5px);
 }
 
 
@@ -146,9 +147,7 @@ a:hover {
   }
 }
 
-.main-nav {
-  padding-top: 25px;
-}
+
 
 .main-nav nav ul li a {
   color: #a7a7a7;
@@ -159,7 +158,7 @@ a:hover {
 }
 
 .section.second {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .section .container {

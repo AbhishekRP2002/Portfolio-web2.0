@@ -10,6 +10,13 @@ radial-gradient(at 76% 3%, rgb(210, 211, 255) 0px, transparent 50%);
 background-size: 100% 100%;
 }
 
+nav {
+  /* position: sticky;
+  top: 0;
+  z-index: 100000 !important; */
+
+  height: 120px;
+}
 
 
 
@@ -31,7 +38,7 @@ background-size: 100% 100%;
 
 #about-id{
   margin-bottom: 50px;
- 
+  margin-top: 10px;
   padding: 10px 15px;
 
 }
@@ -57,4 +64,34 @@ background-size: 100% 100%;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.about-button{
+
+
+  /* padding: 10px 15px;
+  border-radius: 20px;
+  color: aliceblue;
+  border: 0px solid rgb(84, 86, 241);
+  background-color:rgb(84, 86, 241) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; */
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px 50px;
+  border-radius: 5px;
+ 
+  cursor: pointer;
+
+}
+
+.about-college-link{
+
+  font-size: 20px;
+}
+
+.footer-image-link{
+ 
+  text-decoration: none;
 }

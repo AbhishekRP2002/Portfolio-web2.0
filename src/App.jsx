@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./App.css";
 import "../css/custom.css";
 import "../css/font-awesome.min.css";
@@ -9,6 +10,8 @@ import { Link } from "react-scroll";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import GoToTop from "./components/GoToTop";
+
 
 
 
@@ -19,7 +22,8 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="main-nav">
+      <nav className="navbar ">
+      <div className="main-nav" >
         <div className="container-nav">
           <header className="group top-nav">
             <div
@@ -90,6 +94,7 @@ function App() {
           </header>
         </div>
       </div>
+      </nav>
 
       {/* <!-- Introduction --> */}
       <div className="intro section" id="about">
@@ -104,7 +109,7 @@ function App() {
                   {" "}
                   Myself Abhishek Ranjan ,<br />
                   <span
-                    style={{ color: "#00a8ff", fontWeight: "bold" }}
+                    style={{ color: "rgb(84, 86, 241)", fontWeight: "bold" }}
                     id="typed-text"
                     className="typed-text"
                   >
@@ -124,18 +129,26 @@ function App() {
                 </h1>
               </div>
               <p className="about-para">
-                I am Pre-Final year student at{" "}
+                I am an under grad at{" "}
                 <span>
-                  <a href="https://nitrkl.ac.in/">
+                  <a 
+                  className="about-college-link"
+                  href="https://nitrkl.ac.in/">
                     National Institute of Technology , Rourkela
                   </a>
                 </span>{" "}
-                majoring in Computer Science and Engineering. Being a problem
-                solver and tech enthusiast, I love exploring different domains
-                of computer science which aligns with my interest and domain. I
-                am passionate about leveraging my technical background in web
-                development, data science, computer vision, NLP and machine
-                learning to solve real-world problems.
+                majoring in Computer Science and Engineering. My academic interests lie somewhere around the intersection of  Machine Learning , Deep Learning, Natural Language Processing and Designing. I am also deeply committed to web development, start-up culture, and building products that can solve real-world problems and improve people's lives.
+
+                <br />
+                <br />
+                <a href="#">
+                <button 
+                className="about-button"
+              
+                >
+               Read my blogs
+                </button>
+                </a>
               </p>
             </div>
           </div>
@@ -151,25 +164,54 @@ function App() {
             Experiences
           </h1>
           <ul className="work-list">
-            <li>Oct 2022-Dec 2022</li>
+            <li>May 2023-Present</li>
             <li>
-              <a href="https://erip.in/">eRIP</a>
+              <a href="https://research.samsung.com/sri-b">Samsung R&D Institute India-Bangalore (SRI-B)</a>
             </li>
-            <li>Graphics Design Intern</li>
+            <li>Developer Intern</li>
+          </ul>
+          <ul className="work-list">
+            <li>March 2023-May 2023</li>
+            <li>
+              <a href="https://solocl.com/">Solocl Technologies</a>
+            </li>
+            <li>Machine Learning Engineer Intern</li>
+          </ul>
+          <ul className="work-list">
+            <li>March 2023-Present</li>
+            <li>
+              <a href="https://erip.in/">GreyNodes</a>
+            </li>
+            <li>Subject Matter Expert - Data Science & Design and Analysis of Algorithms</li>
+          </ul>
+          <ul className="work-list">
+            <li>Feb 2023-April 2023</li>
+            <li>
+              <a href="https://erip.in/">The Sparks Foundation</a>
+            </li>
+            <li>Data Science and Analytics Intern</li>
           </ul>
           <ul className="work-list">
             <li>August 2022-Oct 2022</li>
             <li>
               <a href="https://ssoc.devfolio.co/">Social Summer of Code 2022</a>
             </li>
-            <li>OSS Contributor</li>
+            <li>Open Source Software Contributor</li>
           </ul>
+          <ul className="work-list">
+            <li>Oct 2022-Dec 2022</li>
+            <li>
+              <a href="https://erip.in/">eRIP</a>
+            </li>
+            <li>Graphics Design Intern</li>
+          </ul>
+   
           <ul className="work-list">
             <li>July 2021-Jan 2022</li>
             <li>
               <a href="https://codeforcause.org/">Code For Cause</a>
             </li>
-            <li>Graphics Design + Frontend web Intern </li>
+            <li>Graphics Design Intern </li>
           </ul>
         </div>
       </div>
@@ -269,15 +311,14 @@ function App() {
           <ul className="skill-list list-flat">
             <li>Frameworks and Libraries</li>
             <li>
-              ReactJS - Bootstrap - Tensorflow - Keras - PyTorch - TensorFlowJS
-              - Scikit-Learn - Numpy - Pandas
+              LangChain - Streamlit - ReactJS - Bootstrap - Tensorflow - Keras - PyTorch - OpenCV - FastAPI - Scikit-learn - Numpy - Pandas
             </li>
           </ul>
           <ul className="skill-list list-flat">
             <li>Web Technologies</li>
             <li>
-              Git - Version Control Systems- Webpack - Vercel - Netlify - Figma
-              - HTML - CSS - Adobe Premiere Pro - Adobe After Effects - VS Code
+              Git - Github - Firebase - Vercel - Netlify - Figma
+              - HTML - CSS - Adobe Premiere Pro - VS Code - MobaXtern - Unix
               - Adobe Illustrator
             </li>
           </ul>
@@ -286,11 +327,16 @@ function App() {
 
       {/* <!-- Quote --> */}
       <div className="quote">
+        <a className="footer-image-link"
+        href="https://www.linkedin.com/in/abhishekrp2002/">
         <div className="container-image text-centered">
           <h1>
             
-            Knowledge is Power.</h1>
+           Have ideas? Let's connect.
+           
+           </h1>
         </div>
+        </a>
       </div>
 
       <footer>
@@ -306,7 +352,7 @@ function App() {
                 </p>
             </div>
 
-        
+          <GoToTop />
         </div>
       </footer>
     </div>
