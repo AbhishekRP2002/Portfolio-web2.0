@@ -61,7 +61,7 @@ To learn more about me, please visit my linktree URL:
 
 If you have any questions, comments or would like to discuss collaboration opportunities,
 #### 📫 Please Feel free to reach out to me :
-[![Twitter Badge](https://img.shields.io/badge/-@AbhishekRanjan-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/abhishek_rp2002)](https://twitter.com/abhishek_rp2002) [![Linkedin Badge](https://img.shields.io/badge/-@AbhishekRanjan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abhishek-ranjan-2002/)](https://www.linkedin.com/in/abhishek-ranjan-2002/) 
+[![Twitter Badge](https://img.shields.io/badge/-AbhishekRanjan-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/abhishek_rp2002)](https://twitter.com/abhishek_rp2002) [![Linkedin Badge](https://img.shields.io/badge/-AbhishekRanjan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/abhishek-ranjan-2002/)](https://www.linkedin.com/in/abhishek-ranjan-2002/) 
 [![Gmail Badge](https://img.shields.io/badge/-aviranjan444@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:aviranjan444@gmail.com)](mailto:aviranjan444@gmail.com)
 ---
 
